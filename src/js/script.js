@@ -113,6 +113,15 @@ more.addEventListener('click', () => {
         },10 + i * 200); // animate delay
         bindNewModal(card);
     }
+    if (night === true) {
+        document.querySelectorAll('.videos__item-descr').forEach(i => {
+          i.style.color = '#fff';
+        });
+        
+        document.querySelectorAll('.videos__item-views').forEach(i => {
+            i.style.color = '#fff';
+        });
+    }
     sliceTitle('.videos__item-descr', 100);
 });
 
