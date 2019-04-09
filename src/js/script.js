@@ -106,10 +106,10 @@ more.addEventListener('click', () => {
                 ${data[2][i]}    
             </div>
         `;
-
+        
         videosWrapper.appendChild(card);
         setTimeout(() => {
             card.classList.remove('videos__item-active');
-        },10);
+        },10 + i * 200); // animate delay
     }
 });
