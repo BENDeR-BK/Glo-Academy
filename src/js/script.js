@@ -139,9 +139,10 @@ function search(target ) {
 
 formSearch.addEventListener('submit', (e) => {
     e.preventDefault();
-    searchInput.value = '';
+    
     more.remove();
     gapi.load('client', () => {search(searchInput.value)});
+    // searchInput.value = '';
 });
 
 ////////////////////////////////////////////////////////////
